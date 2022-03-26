@@ -1,0 +1,28 @@
+{
+  "name": "thought-locker",
+  "version": "1.0.0",
+  "description": "[Click Here Video]()",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm start",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marikadicarlo/thought-locker.git"
+  },
+  "keywords": [
+    "thought"
+  ],
+  "author": "Marika Di Carlo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marikadicarlo/thought-locker/issues"
+  },
+  "homepage": "https://github.com/marikadicarlo/thought-locker#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongodb": "^4.4.1",
+    "mongoose": "^6.2.8"
+  }
+}
