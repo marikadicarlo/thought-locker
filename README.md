@@ -1,6 +1,7 @@
 # thought-locker
 
-[Click Here Video]()
+[User Routes Video]()
+[Thought Routes Video]()
 
 # Description
 An API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. This app is built with Express.js for routing, a MongoDB database, and the Mongoose ODM.
@@ -30,7 +31,7 @@ Make sure to have MongoDB installed on your machine.
 Clone the repository to your local development environment <br />
 `git clone https://github.com/marikadicarlo/thought-locker.git`
 
-Run `npm install` to install dependencies. To use the application locally, run `npm start` in your server. 
+Run `npm init -y`, `npm install express`, `npm install mongoose`, `npm install moment` to install dependencies. To use the application locally, run `npm start` in your server. 
 
 Use your browser or Insomnia to test the REST API. 
 

@@ -2,13 +2,14 @@ const { User, Thought } = require("../models");
 
 const userController = {
   // GET /api/users
-  getAllUsers(req, res) {
+  getAllUser(req, res) {
     User.find({})
       .select("-__v")
-      .then((dbUserData) => res.json(dbUserData))
-      .catch((err) => {
+      .sort({ _id: -1 })
+      .then(dbUserData => res.json(dbUserData))
+      .catch(err => {
         console.log(err);
-        res.status(500).json(err);
+        res.status(400);
       });
   },
 
