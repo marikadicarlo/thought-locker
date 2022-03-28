@@ -1,7 +1,9 @@
 # thought-locker
 
-[User Routes Video]()
-[Thought Routes Video]()
+[User Routes Video](https://drive.google.com/file/d/1xuuFdSA7GUqMoVp6O-mUkbHwb5iB8bLU/view?usp=sharing)
+[Thought Routes Video](https://drive.google.com/file/d/1yoqgXg1rSF1HzxQuQIZ9T-GRcMcIbyMR/view?usp=sharing)
+[Reaction Routes Video](https://drive.google.com/file/d/1lYmP3SqXIUAf7epWt7EXsMf2AYzerocq/view?usp=sharing)
+[Friend Routes Video]()
 
 # Description
 An API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. This app is built with Express.js for routing, a MongoDB database, and the Mongoose ODM.
