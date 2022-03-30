@@ -97,6 +97,7 @@ const userController = {
   // POST /api/users/:userId/friends/:friendId
   addFriend({ params }, res) {
     // add friendId to userId's friend list
+    console.log("anything");
     User.findOneAndUpdate(
       { _id: params.userId },
       { $push: { friends: params.friendId } },
@@ -115,20 +116,21 @@ const userController = {
   // DELETE /api/users/:userId/friends/:friendId
   deleteFriend({ params }, res) {
     // remove friendId from userId's friend list
+    console.log(params);
     User.findOneAndUpdate(
-      { _id: params.id },
+      { _id: params.userId },
       { $pull: { friends: params.friendId } },
       { runValidators: true }
     )
-      .then(dbUserData => {
-                if (!dbUserData) {
-                    res.status(404).json({ message: 'No user found with this id!' });
-                    return;
-                }
-                res.json(dbUserData);
-            })
-            .catch(err => res.status(400).json(err));
-    },
-  }
+      .then((dbUserData) => {
+        if (!dbUserData) {
+          res.status(404).json({ message: "No user found with this id!" });
+          return;
+        }
+        res.json(dbUserData);
+      })
+      .catch((err) => res.status(400).json(err));
+  },
+};
 
 module.exports = userController;
